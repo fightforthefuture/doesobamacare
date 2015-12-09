@@ -1,0 +1,33 @@
+.video-wrapper {
+    width: 60rem;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 4px solid @panel-border-color;
+}
+
+.video-container {
+    height: 0;
+    margin: 0 auto;
+    max-width: 66rem;
+    padding-bottom: 56.25%;
+    padding-top: 3rem;
+    position: relative;
+    overflow: hidden;
+    iframe,
+    object,
+    embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+iframe.map {
+    display: block;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 90%;
+    width: 768px;
+}

@@ -1,0 +1,384 @@
+#state_selector {
+
+
+    select {
+        cursor: pointer;
+        width: 170px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 2rem;
+        color: white;
+        border: 0px none transparent;
+        background: transparent url('/images/arrow.png') no-repeat 100% 0px;
+        background-size: auto 100%;
+        text-align: left;
+        -webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
+        -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
+        -ms-appearance: none; /* get rid of default appearance for IE8, 9 and 10*/
+        appearance: none;
+        position: relative;
+        background-color: #434350;
+
+        &:hover {
+            background-color: #333340;
+        }
+
+        option {
+            text-align: left;
+            background: #333340;
+        }
+        &::-ms-expand {
+            display: none; /* hide default arrow in IE10 */
+        }
+    }
+}
+#call_congress {
+    display: inline-block;
+    color: white;
+    opacity: .5;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+.selectors {
+    color: white;
+    font-size: 2rem;
+    margin: 10px auto 0px auto;
+    .tweet_to {
+        font-weight: bold;
+        margin-right: .5rem;
+        line-height: 40px;
+    }
+    label {
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 15px 5px 5px;
+        margin: 0rem 0rem 0rem .5rem;
+        height: 40px;
+        line-height: 30px;
+        &.sel {
+            background: #636370;
+        }
+        &:hover {
+            background: #535360;
+        }
+    }
+
+    label {
+        padding-right: 5px;
+        &.sel {
+            background: transparent;
+                &:hover {
+                background: #535360;
+            }
+        }
+        &:last-child {
+            display: none;
+        }
+        input {
+            display: none;
+        }
+        span.just {
+            display: none;
+        }
+    }
+}
+
+#tweet_text_container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+
+
+    textarea {
+        width: 100%;
+        max-width: 500px;
+        height: 112px;
+        font-family: @body-font;
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        margin-bottom: 0px;
+        resize: none;
+
+        @media screen and (min-width: @large-phone) {
+            font-size: 2rem;
+        }
+    }
+    #remaining {
+        position: absolute;
+        right: 10px;
+        bottom: 7px;
+        font-size: 3rem;
+        color: gray;
+        opacity: .7;
+
+        &.danger {
+            color: red;
+        }
+    }
+}
+#targets {
+    margin: 2rem auto 2rem auto;
+    max-width: 95%;
+    position: relative;
+    text-align: center;
+    width: 60rem;
+    display: none;
+
+    .side0, .side1 {
+        display: inline-block;
+    }
+    .politician {
+        margin: 0 2.5rem 0rem 2.5rem;
+    }
+
+    @media screen and (min-width: @large-phone) {
+        display: block;
+
+        .side0 {
+            position: absolute;
+            left: -11.5rem;
+        }
+        .side1 {
+            position: absolute;
+            right: -11.5rem;
+            margin-left: 372px;
+        }
+        .politician {
+            margin: 0;
+        }
+    }
+
+}
+p.cta {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-shadow: 0 0 0.5rem black;
+}
+
+.disclosure {
+    line-height: 1.2;
+    margin-top: 1.6rem;
+}
+
+.action {
+    max-width: 90%;
+    margin: 5rem auto 1rem auto;
+    text-align: center;
+    width: 60rem;
+
+    iframe {
+        display: none;
+        margin: 10px auto;
+        width: 260px;
+        height: 50px;
+
+        @media screen and (min-width: @small-tablet) {
+            width: 400px;
+            height: 75px;
+        }
+    }
+
+    a.tweet {
+        display: block;
+        margin: 10px auto;
+        background-color: #17A1CE;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        font-family: @body-font, Helvetica, Verdana, sans-serif;
+        color: white;
+        width: 250px;
+        height: 50px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        line-height: 50px;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1bbaee+0,17a1ce+100 */
+        background: #1bbaee; /* Old browsers */
+        background: -moz-linear-gradient(top, #1bbaee 0%, #17a1ce 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1bbaee), color-stop(100%,#17a1ce)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #1bbaee 0%,#17a1ce 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #1bbaee 0%,#17a1ce 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #1bbaee 0%,#17a1ce 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #1bbaee 0%,#17a1ce 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1bbaee', endColorstr='#17a1ce',GradientType=0 ); /* IE6-9 */
+    }
+    a.tweet img {
+        width: 24px;
+        height: auto;
+        vertical-align: middle;
+        margin: 0px 5px 3px 0px;
+    }
+    @media screen and (min-width: 400px) {
+        a.tweet {
+            width: 390px;
+            height: 75px;
+            line-height: 75px;
+            font-size: 23px;
+        }
+        a.tweet img {
+            width: 38px;
+            height: auto;
+        }
+    }
+    a.tweet:hover {
+        background: #17A1CE;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+        text-shadow: 0px;
+    }
+
+
+    h3 {
+        color: @white;
+        opacity: .8;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        color: @white;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 0;
+
+        &:first-child {
+            /*background: @action-box-backgrounds;*/
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            line-height: 1.43;
+            font-size: 2.1rem;
+            padding: 0 1.44rem 0;
+        }
+    }
+    &.top {
+        margin-top: 2rem;
+        p {
+            &:first-child {
+                background: @action-box-backgrounds;
+                padding-top: 1rem;
+            }
+        }
+    }
+    form {
+        background: @action-box-backgrounds;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 1.3rem 1.44rem 1.8rem;
+    }
+
+    .share {
+        margin-top: 2rem;
+    }
+    strong {
+        font-weight: bold;
+    }
+}
+
+.petition {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    input {
+        border: 0 none transparent;
+        border-radius: 0.7rem;
+        display: block;
+        font-size: 1.9rem;
+        background: @white;
+        margin: 0 auto 1rem;
+        max-width: 100%;
+        padding: 1.5rem;
+        width: 50rem;
+
+        @media screen and (min-width: @small-tablet) {
+            border-radius: 0;
+            border-right: @action-box-borders solid 0.1rem;
+            display: inline;
+            margin: 0;
+            padding: 1.5rem 1rem;
+            width: 28%;
+        }
+
+        &[name="first_name"] {
+            @media screen and (min-width: @small-tablet) {
+                border-top-left-radius: 0.7rem;
+                border-bottom-left-radius: 0.7rem;
+            }
+        }
+
+        &[name="address1"] {
+            @media screen and (min-width: @small-tablet) {
+                width: 30%;
+            }
+        }
+        &[name="zip"] {
+            @media screen and (min-width: @large-phone) {
+                margin: 0 0.5rem 0 auto;
+                width: 24.5rem;
+            }
+            @media screen and (min-width: @small-tablet) {
+                border-right: none;
+                border-top-right-radius: 0.7rem;
+                border-bottom-right-radius: 0.7rem;
+                margin: 0;
+                width: 14%;
+            }
+        }
+
+        &.error {
+            background: #fdd;
+        }
+    }
+    button {
+        background-color: #ff4d4d;
+        border: none;
+        font-size: 2.24rem;
+        line-height: 2.4;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        height: 5.44rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.08rem;
+        color: @white;
+        border-radius: 14px;
+        cursor: pointer;
+        transition: background-color 400ms ease;
+
+        @media screen and (min-width: @large-phone) {
+            margin: 0 auto 0 0.5rem;
+            width: 24.5rem;
+        }
+
+        @media screen and (min-width: @small-tablet) {
+            border-radius: 0.7rem;
+            margin: 1rem auto 0;
+            width: 100%;
+        }
+
+        &:hover {
+            background-color: #ee3d3d;
+        }
+    }
+
+    textarea {
+        display: none;
+    }
+    p {
+        font-size: 1.28rem;
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, .7);
+        a {
+            color: @white;
+        }
+    }
+}

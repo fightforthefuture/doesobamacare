@@ -1,0 +1,166 @@
+.copy {
+    h1 {
+        font-size: 4rem;
+        margin: 0 auto 3rem;
+        max-width: 66rem;
+        padding: 5rem 0 0;
+        line-height: 5rem;
+        a {
+            &:link, &:visited, &:hover, &:active {
+                color: @body-copy-color;
+                text-decoration: none;
+            }
+        }
+        @media screen and (min-width: @small-phone) {
+            font-size: 5rem;
+        }
+        @media screen and (min-width: @large-phone) {
+            padding: 5rem 3rem 0;
+            font-size: 5.5rem;
+        }
+        @media screen and (min-width: @small-tablet) {
+            padding: 5rem 6rem 0;
+        }
+        @media screen and (min-width: @large-tablet) {
+            padding: 5rem 0 0;
+        }
+    }
+    article {
+        max-height: 60rem;
+        overflow: hidden;
+        position: relative;
+        transition: max-height 400ms;
+
+        @media screen and (min-width: @small-phone) {
+            max-height: 28rem;
+        }
+
+        @media screen and (min-width: @small-tablet) {
+            max-height: 32rem;
+        }
+
+        &.expanded {
+            max-height: 10000rem;
+            margin-bottom: 1rem;
+            .more {
+                display: none;
+            }
+        }
+
+    }
+    a {
+        color: @white;
+    }
+    p {
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    strong {
+        font-weight: bold;
+    }
+    ul {
+        li {
+            max-width: 72ch;
+            margin: 0px auto 3rem;
+            color: @white;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 2rem;
+        }
+    }
+    h3, h4 {
+        color: @white;
+    }
+    hr {
+        border-color: transparent;
+        border-bottom: lighten(@background-color, 20%) solid 0.1rem;
+        margin: 0 auto 0rem;
+        @media screen and (min-width: @small-phone) {
+            margin-bottom: 1rem;
+        }
+        width: 30%;
+
+        &:first-child {
+            display: none;
+        }
+    }
+    .video-wrapper{
+
+    }
+    .btn {
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        background: #ff4d4d;
+        padding: 5px 15px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        @media screen and (min-width: @small-phone) {
+            font-size: 2rem;
+        }
+
+        &:hover {
+            background: #ee3d3d;
+        }
+    }
+    blockquote {
+        display: block;
+        margin: 0px auto;
+        width: 100%;
+        max-width: 768px;
+        overflow: auto;
+        background: #444457;
+        padding: 10px;
+        color: #eee;
+        font-family: "Courier New";
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+button.link {
+    background: transparent;
+    border: none;
+    color: @body-copy-color;
+    cursor: pointer;
+    text-decoration: underline;
+    &:hover, &:active, &:focus {
+        color: @white;
+    }
+}
+
+.inline {
+    display: inline;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline;
+    }
+}
+
+ul, ol {
+    &.piped {
+        li {
+            margin: 0;
+            padding: 0;
+            &::before {
+                content: '|\00a0';
+                display: inline-block;
+            }
+            &:first-child {
+                &::before {
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+    }
+}
+

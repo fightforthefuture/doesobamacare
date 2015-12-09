@@ -1,0 +1,48 @@
+{
+  "name": "doesobamacare",
+  "version": "0.0.0",
+  "description": "Does Obama care about the Internet?",
+  "scripts": {
+    "postinstall": "bundle",
+    "start": "grunt",
+    "verbose": "grunt dev -vvv",
+    "build": "grunt build",
+    "deploy": "./deploy-ghpages.sh"
+  },
+  "author": [
+    {
+      "name": "Aki Braun",
+      "email": "aki@fightforthefuture.org"
+    },
+    {
+      "name": "Jeff Lyon",
+      "email": "jeff@fightforthefuture.org"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fightforthefuture/doesobamacare.git"
+  },
+  "license": "GPL-2.0",
+  "dependencies": {
+    "d3": "^3.5.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.0",
+    "cssnano": "^3.2.0",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "^2.0.3",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "~0.11.2",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-jekyll": "^0.4.2",
+    "grunt-postcss": "^0.7.0",
+    "jit-grunt": "^0.9.1",
+    "time-grunt": "^1.1.0"
+  }
+}

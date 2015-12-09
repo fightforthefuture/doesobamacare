@@ -1,0 +1,272 @@
+.block {
+
+    > div {
+        display: inline-block;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        margin: 5px;
+        cursor: pointer;
+        font-weight: 600;
+
+        &.good {
+            background: #03b3b1;
+        }
+        &.neutral {
+            background: #6E6EBE;
+        }
+        &.bad {
+            background: #d85d40;
+        }
+
+        .peekaboo {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 32px;
+            height: 32px;
+
+            .politician {
+                position: absolute;
+                top: -114px;
+                left: -33px;
+                display: none;
+                z-index: 9000;
+                box-shadow: 0px 3px 20px black;
+
+                .rollover {
+                    padding-top: 27px;
+                }
+
+                h3 {
+                    right: 6px;
+                    bottom: 6px;
+                }
+
+            }
+
+            &:hover {
+                background: rgba(0, 0, 0, .5);
+                > div {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.politician {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0 1.5rem 1.5rem 0;
+
+    h3 {
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        font-size: 1.9rem;
+        font-weight: 600;
+        font-family: @body-font;
+        margin-bottom: 0;
+        border-radius: 5px;
+        z-index: 9000;
+    }
+    .grade {
+        color: @white;
+    }
+
+    h4 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 0.16rem;
+        font-size: 1.7rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: 22px;
+        line-height: 22px;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        z-index: 9000;
+    }
+
+    .rollover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 11.4rem;
+        background: fade(@background-color, 70%);
+        padding-top: 35px;
+        opacity: 0;
+        transition: opacity .2s linear;
+        border-radius: 10px;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    button {
+        border-radius: 100px;
+        border-style: solid;
+        border-width: 3px;
+        color: @white;
+        cursor: pointer;
+        font-family: @quote-font;
+        font-size: 2.5rem;
+        font-weight: 600;
+        height: 4.5rem;
+        transition: background-color 200ms linear, border-color 200ms linear;
+        vertical-align: top;
+        width: 4.5rem;
+
+        &.tweet_link {
+            .renderTwitter(4.5rem; auto; 32px);
+            //background-size: auto 3.2rem;
+            background-position: 0.5rem center;
+            //background-repeat: no-repeat;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    ul.extra_info {
+        margin-top: 10px;
+        color: white;
+        padding: 0px;
+
+        li {
+            width: 9.7rem;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+            white-space: nowrap;
+            font-size: 1.3rem;
+            padding-bottom: .5rem;
+            font-weight: 600;
+
+            a {
+                color: white;
+                opacity: .8;
+
+                &:hover {
+                    text-decoration: underline;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.headshot {
+    background: center center no-repeat;
+    background-size: 100% auto;
+    border-radius: 1rem;
+    cursor: pointer;
+    height: 11.4rem;
+    width: 9.7rem;
+
+    /* JL NOTE ~ tmp chrome fix styles -------------------------------------- */
+    i {
+        height: 11.4rem;
+        width: 9.7rem;
+        opacity: .7;
+        border-radius: 1rem;
+    }
+    /* ---------------------------------------------------------------------- */
+}
+
+.good {
+    .headshot {
+        background: #03b3b1;
+        /* background-color: rgba(3, 179, 177, 0.66);*/
+
+    }
+    .grade {
+        background: #03b3b1;
+    }
+    h4 {
+        background: #05484e;
+    }
+    button {
+        background-color: #065e64;
+        border-color: #103644;
+
+        &:hover {
+            background-color: #03b3b1;
+            border-color: #05484e;
+        }
+    }
+}
+
+.neutral {
+    .headshot {
+        background: #6e6ebe;
+        /* background-color: rgba(110, 110, 190, 0.66); */
+    }
+    .grade {
+        background: #6e6ebe;
+    }
+    h4 {
+        background: #303050;
+    }
+    button {
+        background-color: #303050;
+        border-color: #202040;
+
+        &:hover {
+            background-color: #6e6ebe;
+            border-color: #303050;
+        }
+    }
+}
+
+.bad {
+    .headshot {
+        background: #d85d40;
+        /* background-color: rgba(216, 93, 64, 0.66); */
+    }
+    .grade {
+        background: #d85d40;
+    }
+    h4 {
+        background: #8f3e2a;
+    }
+    button {
+        background-color: #a14e3a;
+        border-color: #4b220e;
+
+        &:hover {
+            background-color: #d85d40;
+            border-color: #8f3e2a;
+        }
+    }
+}
+
+.politician_modal {
+    ul {
+        padding-left: 3rem;
+        .bad {
+            list-style-image: url('../images/down.png');
+        }
+        .good {
+            list-style-image: url('../images/up.png');
+        }
+    }
+}
+

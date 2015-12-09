@@ -1,0 +1,82 @@
+.action_bar {
+    bottom: 0;
+    left: 0;
+    padding: 0.3rem 0.1rem 0.4rem 0.1rem;
+    position: fixed;
+    width: 100%;
+    border-top: 0.1rem solid lighten(@fixed-bar-background-color, 20%);
+    background: @fixed-bar-background-color;
+    z-index: 9001;
+    font-weight: 600;
+    text-align: center;
+    @media screen and (min-width: @small-laptop) {
+        text-align: right;
+        padding: 10px 10px 12px 10px;
+    }
+
+    span {
+        display: none;
+        @media screen and (min-width: @small-phone) {
+            display: inline;
+        }
+    }
+
+    a {
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .call {
+
+        a {
+            color: white;
+        }
+
+        display: none;
+
+        @media screen and (min-width: @small-laptop) {
+            display: block;
+            font-size: 27px;
+            color: #fff;
+            position: absolute;
+            left: 30px;
+            top: 11px;
+            font-weight: 300;
+
+            strong {
+                font-weight: bold;
+                color: white;
+            }
+        }
+    }
+
+    .donate {
+        display: none;
+        margin-top: 0;
+        margin: 0 5px 0px 15px;
+        border: 0;
+        padding: 0 15px 0 15px;
+        height: 30px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 27px;
+        width: 120px;
+        color: @white;
+        font-family: @body-font;
+        cursor: pointer;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 25px;
+        background: #5f5f84; /* Old browsers */
+
+        @media screen and (min-width: @small-phone) {
+            display: inline-block;
+        }
+    }
+
+    button.social {
+        margin-top: 2px;
+    }
+}

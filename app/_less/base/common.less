@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box
+}
+
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    background: @background-color url('../images/dome2.jpg') center top no-repeat;
+    font-size: 1.6rem;
+    font-family: @body-font;
+    padding: 0rem 0px 0;
+    position: relative;
+
+
+    @media screen and (min-width: @medium-laptop) {
+        background-size: 100% auto;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @white;
+    font-family: @heading-font;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25vw;
+    font-weight: bold;
+    line-height: 0.8;
+    text-align: center;
+    letter-spacing: 0.08rem;
+    margin-bottom: 3rem;
+    padding-top: 5rem;
+
+    @media screen and (max-width: @large-phone) {
+        font-size: 5rem;
+    }
+
+    @media screen and (min-width: @large-phone) {
+        font-size: 7.5rem;
+        line-height: 0.82;
+    }
+
+    @media screen and (min-width: @small-tablet) {
+        font-size: 10.6rem;
+    }
+
+    em {
+        display: block;
+    }
+
+    &#top {
+        @media screen and (min-width: @small-phone) {
+            padding-top: 5.5rem;
+        }
+        @media screen and (min-width: @large-phone) {
+            padding-top: 9.36rem;
+        }
+    }
+}
+
+h2 {
+    font-size: 17vw;
+    letter-spacing: 0.16rem;
+    margin-bottom: 25px;
+    @media screen and (min-width: @small-phone) {
+        font-size: 8rem;
+    }
+}
+
+h3 {
+    display: block;
+    font-size: 3.52rem;
+    margin-bottom: 0.8rem;
+
+    &.cta {
+        font-family: @body-font;
+        font-size: 2.3rem;
+        font-weight: 600;
+        padding-top: 0rem;
+        max-width: 768px;
+        line-height: 3rem;
+        margin: 0 auto 3rem auto;
+    }
+
+    a {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+dt, dd, p {
+    color: @body-copy-color;
+    margin: 0 auto 3rem;
+    max-width: 72ch;
+}
+
+dt {
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+
+    &.cta {
+        line-height: 2.32rem;
+        color: @white;
+    }
+
+    dd & {
+        text-align: left;
+    }
+}
+
+.hidden {
+    display: none;
+}

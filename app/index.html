@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{% include nav.html %}
+<h1 id="top">Does Obama really care <em>about the Internet?</em></h1>
+<h3 class="cta">President Obama stood up for net neutrality and claimed to support Internet freedom. But now he’s poised to sign CISA, a bill that tech experts, major companies, and civil liberties groups agree would destroy our basic rights to security and freedom of expression.</h3>
+<div id="targets"><div class="side0"></div><div class="side1"></div></div>
+<div class="action top" id="email">
+    <p id="form-headline">
+        <strong>Tell Obama:</strong> "If you really care about the Internet and our right to free speech, veto CISA."
+    </p>
+    {% include cta_petition.html %}
+    <div id="thanks" class="hidden">
+        <h3>Thanks for taking action!</h3>
+        <p>
+            We're up against some of the most powerful corporate lobbyists in the country, but that hasn't stopped us before. If a critical mass of citizens speak out against CISA, our voices will be impossible to ignore.
+        </p>
+        <div class="share">
+            <button class="social facebook">Share this</button>
+            <button class="social twitter">Tweet this</button>
+        </div>
+    </div>
+</div>
+
+<section class="copy">
+
+    {% for post in site.posts %}
+    {% if forloop.first or post.expanded %}
+    <article id="{{ post.slug }}" class="expanded">
+    {% else %}
+    <article id="{{ post.slug }}">
+    {% endif %}
+        <h1>
+            <a href="#{{ post.slug }}" class="expand-me">
+                {{ post.title }}
+            </a>
+        </h1>
+        <time datetime="{{ post.date | date_to_rfc822 }}"></time>
+        {{ post.content }}
+        {% if forloop.first == false and post.expanded != true %}
+        <a href="#{{ post.slug }}" class="expand-me more">Learn more&hellip;</a>
+        {% endif %}
+    </article>
+    {% endfor %}
+</section>
+{% include methodology-modal.html %}
+{% include action-bar.html %}

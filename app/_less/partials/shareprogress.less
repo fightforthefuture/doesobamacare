@@ -1,0 +1,67 @@
+body .sp_fb_small, body .sp_tw_small {
+    display: inline-block;
+    height: 30px;
+    vertical-align: bottom;
+    margin: 0px 5px;
+
+    a {
+        border: 0;
+        border-radius: 7.142857143em;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: inline-block;
+        font-family: @body-font;
+        font-weight: bold;
+        height: 30px;
+        width: 120px;
+        line-height: 2;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+
+        &::before {
+            position: absolute;
+            display: block;
+            left: 45px;
+            top: 0px;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+}
+div.share {
+    .sp_fb_small, .sp_tw_small {
+        @media screen and (max-width: @small-phone) {
+            margin: 0px;
+        }
+    }
+}
+body .sp_fb_small {
+    a {
+        background-color: #3b5a95;
+        left: 1rem;
+        position: relative;
+        &::before {
+            .renderFacebook(1.8rem; auto; 1.8rem);
+        }
+        &::after {
+            content: 'SHARE';
+        }
+    }
+}
+body .sp_tw_small {
+    a {
+        background-color: #17a1ce;
+        left: 1rem;
+        position: relative;
+
+        &::before {
+            .renderTwitter(1.8rem; auto; 1.8rem);
+        }
+        &::after {
+            content: 'TWEET';
+        }
+    }
+}
