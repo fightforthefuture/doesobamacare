@@ -16,7 +16,6 @@ expanded: true
 <a href="http://www.dropbox.com" target="_blank"><img src="images/logos/dropbox.png"/></a>
 <a href="http://www.duckduckgo.com" target="_blank"><img src="images/logos/duckduckgo.png"/></a>
 <a href="http://www.ebay.com" target="_blank"><img src="images/logos/ebay.png"/></a>
-<a href="http://www.facebook.com" target="_blank"><img src="images/logos/facebook.png"/></a>
 <a href="http://www.google.com" target="_blank"><img src="images/logos/google.png"/></a>
 <a href="http://www.linkedin.com" target="_blank"><img src="images/logos/linkedin.png"/></a>
 <a href="http://www.microsoft.com" target="_blank"><img src="images/logos/microsoft.png"/></a>
