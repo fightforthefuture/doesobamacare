@@ -4,9 +4,9 @@
 # (production settings go in _config.build.yml)
 
 name: Does Obama even care?
-sharetitle: They’re deciding the future of the Internet right now
+sharetitle: This decision about the Internet will define Obama’s legacy
 url: http://www.decidethefuture.org
-description: Find out where these politicians stand on your freedom
+description: It’s worst attack on our freedom since the PATRIOT Act. Will he sign it?
 timezone: America/Los_Angeles
 googleanalytics: UA-26576645-28
 author:
