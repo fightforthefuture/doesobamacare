@@ -14,11 +14,8 @@ expanded: true
 <img onload="this.style.opacity=1;" src="images/depthomelandsecurity.png">
 </p>
 <p>
-In the weeks since the Senate approved CISA, Speaker Paul Ryan has
-been busy stripping privacy protections from the bill. Now CISA is much worse
-than the version President Obama threatened to veto, but Ryan is trying
-to tack it onto a must-pass budget bill that Obama can't veto without
-shutting down the government. Here are the latest changes:
+In the weeks since the Senate approved CISA, Speaker Paul Ryan has been busy stripping privacy protections from the bill. Now CISA is much worse than the version Obama threatened to veto—but Ryan is adding it as a rider to a must-pass budget bill that Obama can't veto without shutting down the government.
+The latest changes turn CISA from a mass surveillance bill to a mass incarceration bill:
 <ul>
 <li>
     Removed prohibition of information being shared automatically with NSA and
@@ -40,11 +37,4 @@ shutting down the government. Here are the latest changes:
     Instead, scrubbing is at discretion of Agency.
 </li>
 </ul>
-</p>
-<p>
-Separately, Paul Ryan is also trying to
-<a href="https://www.govtrack.us/congress/bills/114/hr3654/text" target="_blank">pass a bill (H.R.3654)</a>
-that would allow the government to coerce Internet companies into sharing as much
-private data as possible with the NSA. With CISA, we're no longer talking about a
-mass surveillance bill. This is a mass incarceration bill.
 </p>
