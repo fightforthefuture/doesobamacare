@@ -32,7 +32,6 @@ Click on the logos below to learn why.
 <a href="https://twitter.com/wikimediapolicy/status/655179547994816512" target="_blank"><img src="/images/logos/wikipedia.png"/></a>
 <a href="http://www.ccianet.org/2015/10/ccia-urges-senate-to-improve-cybersecurity-information-sharing-act/" target="_blank"><img src="/images/logos/yahoo.png"/></a>
 <a href="https://twitter.com/Yelp/status/655938689952976896" target="_blank"><img src="/images/logos/yelp.png"/></a>
-
 <a href="https://www.newamerica.org/oti/coalition-letter-from-55-civil-society-groups-security-experts-and-academics-opposing-cisa/" target="_blank"><img src="/images/logos/access.jpg"/></a>
 <a href="https://www.newamerica.org/oti/coalition-letter-from-55-civil-society-groups-security-experts-and-academics-opposing-cisa/" target="_blank"><img src="/images/logos/adc.jpg"/></a>
 <a href="https://www.newamerica.org/oti/coalition-letter-from-55-civil-society-groups-security-experts-and-academics-opposing-cisa/" target="_blank"><img src="/images/logos/aclu.png"/></a>
